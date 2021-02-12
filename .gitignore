@@ -3,3 +3,9 @@ node_modules/
 
 # vscode
 .vscode
+
+# environments
+.env
+
+# docker-data
+docker-data/
