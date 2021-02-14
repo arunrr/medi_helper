@@ -12,8 +12,8 @@ const getAllUsers = async () => {
 const getSpecificUser = async (username) => {
   return await dbConnection
     .table(tableNames.user)
-    .select(userColumns)
-    .where('username' === username);
+    .where('username', username)
+    .select(userColumns);
 };
 
 module.exports = { getAllUsers, getSpecificUser };
